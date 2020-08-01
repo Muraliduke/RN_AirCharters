@@ -8,8 +8,8 @@ import image from './../assets/home_1.jpg'
 import Animated from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PlainCard from '../components/cards/PlainCard';
-import { justAClickAway, homeHeroCard } from '../mockData/cardData';
-import { ParallaxCard } from '../components/cards';
+import { justAClickAway, homeHeroCard, chardhamHeli, repatriation, emptyLegs, routeBLRtoSGP, routeDUBtoRYD } from '../mockData/cardData';
+import { ParallaxCard, ImageCard } from '../components/cards';
 import HomeImage from './../assets/home_port_1.jpg';
 
 const styles = StyleSheet.create({
@@ -61,9 +61,13 @@ export default function Home({ navigation }) {
           <Image style={{ display: 'flex', width: '100%', height: '100%' }} resizeMode="cover" source={HomeImage} />
         )}>
         <PlainCard {...justAClickAway} />
-      
+        <ImageCard {...chardhamHeli} />
+        <ImageCard {...repatriation} />
+        <ImageCard variant="textOnly" {...emptyLegs} />
+        <ImageCard  {...routeDUBtoRYD} />
+        <ImageCard  {...routeBLRtoSGP} />
       </ParallaxScrollView>
-      
+
       {/* <ScrollView >
 
       </ScrollView> */}

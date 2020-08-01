@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { createNew } from 'typescript';
 
 const styles = StyleSheet.create({
   root: {
@@ -11,12 +10,16 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontFamily: "sans serif",
     fontSize: 24,
-    marginVertical: 20
+    marginTop: 100,
+    marginBottom: 30
   },
   content: {
     fontFamily: "sans serif",
     textAlign: "center",
-    marginBottom: 20
+    marginBottom: 20,
+    lineHeight: 25,
+    fontFamily: "times",
+    paddingHorizontal: 15
   },
   action: {
     width: 150,
@@ -27,17 +30,21 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 2,
     padding: 20,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    borderRadius: 4
   },
   actionWrapper: {
     display: 'flex',
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 20
+    marginTop: 70
   },
   actionText: {
     textAlign: "center",
-    width: '100%'
+    width: '100%',
+    color: "gray",
+    fontWeight: 'bold',
+    fontSize: 16
   }
 })
 
