@@ -1,0 +1,2 @@
+>>>>cd android >./gradlew clean
+>>>$DIR$ > npx react-native run-android
