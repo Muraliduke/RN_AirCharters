@@ -8,7 +8,6 @@ export const imageCard = {
   },
   image: {
     width: '100%',
-    marginBottom: 30,
   },
   text: {
     fontFamily: "times new roman",
@@ -41,7 +40,8 @@ export const imageCard = {
 
 export const textOnly = {
   root: {
-    paddingVertical: 50
+    paddingTop: 50,
+    paddingHorizontal: 30
   },
   title: {
     textAlign: "center",
@@ -54,4 +54,76 @@ export const textOnly = {
     textAlign: "center",
     marginVertical: 15
   },
+}
+
+export const imageCard2 = {
+  root: {
+    position: "relative",
+    marginTop: 50
+  },
+  image: {
+    width: '100%',
+    display: 'flex',
+    position: 'relative'
+  },
+  title: {
+    position: "absolute",
+    top: '40%',
+    bottom: 0,
+    margin: "auto",
+    width: '100%',
+    height: '100%',
+    textAlign: "center",
+    fontFamily: "sans serif",
+    color: "white",
+    fontSize: 36,
+    lineHeight: 50
+  },
+  action: {
+    width: 150,
+    borderColor: 'white',
+    borderWidth: 2,
+    padding: 20,
+    backgroundColor: "transparent",
+    borderRadius: 4,
+  },
+  actionWrapper: {
+    position: "absolute",
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    bottom: '20%',
+  },
+  actionText: {
+    textAlign: "center",
+    width: '100%',
+    color: "white",
+    fontWeight: 'bold',
+    fontSize: 16
+
+  }
+}
+
+export const imageCard3 = {
+  root: {
+    position: "relative",
+  },
+  image: {
+    width: '100%',
+    display: 'flex',
+    position: 'relative'
+  },
+  title: {
+    position: "absolute",
+    top: '40%',
+    bottom: 0,
+    margin: "auto",
+    width: '100%',
+    height: '100%',
+    textAlign: "center",
+    fontFamily: "sans serif",
+    color: "white",
+    fontSize: 28
+  }
 }

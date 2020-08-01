@@ -8,7 +8,7 @@ import image from './../assets/home_1.jpg'
 import Animated from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PlainCard from '../components/cards/PlainCard';
-import { justAClickAway, homeHeroCard, chardhamHeli, repatriation, emptyLegs, routeBLRtoSGP, routeDUBtoRYD } from '../mockData/cardData';
+import { justAClickAway, homeHeroCard, chardhamHeli, repatriation, emptyLegs, routeBLRtoSGP, routeDUBtoRYD, travelInStyle, wideChoices, mission } from '../mockData/cardData';
 import { ParallaxCard, ImageCard } from '../components/cards';
 import HomeImage from './../assets/home_port_1.jpg';
 
@@ -66,6 +66,14 @@ export default function Home({ navigation }) {
         <ImageCard variant="textOnly" {...emptyLegs} />
         <ImageCard  {...routeDUBtoRYD} />
         <ImageCard  {...routeBLRtoSGP} />
+        <ImageCard variant="imageCard2"  {...travelInStyle} />
+        <ImageCard variant="textOnly" {...wideChoices} />
+        <ImageCard variant="imageCard2" {...mission} />
+        <View style={{ paddingVertical: 50, paddingHorizontal: 20 }}>
+          <Text style={{ fontSize: 18, textAlign: "center", lineHeight: 30, color: "lightgray" }}>
+            (C) AIR CHARTERS INDIA 2020. A SUBSIDIARY OF AIKAA VENTURES PVT LTD INDIA
+          </Text>
+        </View>
       </ParallaxScrollView>
 
       {/* <ScrollView >

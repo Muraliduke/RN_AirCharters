@@ -2,6 +2,8 @@ import homeImage1 from '../assets/home_port_1.jpg'
 import home2 from '../assets/home_2.jpg'
 import home3 from '../assets/home_3.jpeg'
 import home5 from '../assets/home_5.jpeg'
+import home7 from '../assets/home_port_7.jpg'
+import home8 from '../assets/home_port_8.jpg'
 
 export const justAClickAway = {
   title: "Your plane is just a click away.",
@@ -106,4 +108,21 @@ export const routeDUBtoRYD = {
       text: "Remarks                    :    Covid Negative Report Mandatory."
     }],
   actionText: "BOOK NOW"
+}
+
+
+export const travelInStyle = {
+  image: home7,
+  title: "TRAVEL IN STYLE",
+  actionText: "BOOK NOW",
+}
+
+export const wideChoices = {
+  title: "Presenting a fleet of wide choice of aircraft catered to meet varied requirements of each client of ours."
+}
+
+
+export const mission = {
+  image: home8,
+  title: "Your Business is \n Our Mission"
 }
