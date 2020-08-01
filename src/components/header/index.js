@@ -27,11 +27,11 @@ export default function Header() {
   return (
     <SafeAreaView>
       <View style={styles.header}>
-        <Icon
+        {/* <Icon
           name="bars"
           onPress={() => { }}
         >
-        </Icon>
+        </Icon> */}
         <Text style={styles.headerText}>AIR CHARTERS INDIA</Text>
       </View>
     </SafeAreaView>
