@@ -15,12 +15,12 @@ export default function App() {
     <>
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="Home">
-          <Drawer.Screen name="Home" component={HomeScreen} />
-          <Drawer.Screen name="BookNow" component={BookNowScreen} />
-          <Drawer.Screen name="Contacts" component={ContactScreen} />
-          <Drawer.Screen name="Fleets" component={FleetScreen} />
-          <Drawer.Screen name="Partner" component={PartnerScreen} />
-          <Drawer.Screen name="Tours" component={TourScreen} />
+          <Drawer.Screen name="Home " component={HomeScreen} />
+          <Drawer.Screen name="BookNow  " component={BookNowScreen} />
+          <Drawer.Screen name="Contacts  " component={ContactScreen} />
+          <Drawer.Screen name="Fleets  " component={FleetScreen} />
+          <Drawer.Screen name="Partner  " component={PartnerScreen} />
+          <Drawer.Screen name="Tours  " component={TourScreen} />
         </Drawer.Navigator>
       </NavigationContainer>
     </>
