@@ -7,12 +7,22 @@ import ContactScreen from './src/screens/Contact';
 import FleetScreen from './src/screens/Fleet';
 import PartnerScreen from './src/screens/Partner';
 import TourScreen from './src/screens/Tours';
+import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 
 const Drawer = createDrawerNavigator();
-
+const theme = {
+  ...DefaultTheme,
+  roundness: 2,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: '#000',
+    accent: '#f1c40f',
+  },
+};
 export default function App() {
   return (
     <>
+    <PaperProvider theme={theme}>
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="Home">
           <Drawer.Screen name="Home" component={HomeScreen} />
@@ -23,6 +33,7 @@ export default function App() {
           <Drawer.Screen name="Tours" component={TourScreen} />
         </Drawer.Navigator>
       </NavigationContainer>
+    </PaperProvider>
     </>
   );
 }
